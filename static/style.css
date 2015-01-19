@@ -57,7 +57,7 @@ HEADER
 	position: relative;
 	width: 1200px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0;
 	
 }	
 
@@ -82,6 +82,12 @@ padding:37px 0px 35px 20px;
 height: 47px;
 
 }
+
+img.top-line {
+	margin:3px auto;
+	width: 100%;
+}
+
 /*
 ===================
 MAIN SECTION
@@ -273,6 +279,71 @@ margin:10px 15px 20px 0;
 float:left;
 }
 
+/*
+===================
+COLOR OVERLAY
+===================
+*/
+
+a.folio-item {
+	position: relative;
+	display: inline-block;
+	height: 131px;
+}
+
+.folio-item:hover img {
+               opacity:0.5;
+           	}
+
+
+img.site{
+	width:181px;
+	border: 2px solid #3ba8c0;
+-webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+		border-radius: 5px;
+}
+
+
+.folio-item:hover {
+	background:rgba(1,108,164,.75);
+	-webkit-border-radius: 5px;
+   		-moz-border-radius: 5px;
+			border-radius: 5px;
+			overflow: hidden;
+               }
+span.caption{
+	position: absolute;
+	display: block;
+	padding:3px;
+	font-size: 14px;
+	font-weight: 300;
+	margin-top:-90px;
+	margin-left: 58px;
+	border: 1px solid #fff;
+	 -webkit-border-radius: 2px;
+   		-moz-border-radius: 2px;
+			border-radius: 2px;
+	opacity:0;
+	color:white;
+	text-align:center;
+}      
+
+.folio-item:hover .caption {
+	opacity:1;
+	
+}                        
+
+#plus       {  font-family:Helvetica;
+               font-weight:900;
+               color:rgba(255,255,255,.85);
+               font-size:96px;}
+
+
+
+
+
+
 h5 {margin:5px 0;
 	text-align: center;
 	color: #48cbe8;
@@ -284,14 +355,6 @@ h5 {margin:5px 0;
 	text-align: center;
 	margin:10px 0;
 	font-weight: 300;
-}
-
-img.site{
-	width:181px;
-	border: 2px solid #3ba8c0;
--webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-		border-radius: 5px;
 }
 
 a.add{
