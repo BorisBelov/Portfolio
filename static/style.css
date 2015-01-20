@@ -112,6 +112,7 @@ SIDE-BAR
 }
 
 .center{
+position: relative;
 float:right;
 width: 650px;
 }
@@ -125,8 +126,8 @@ background: #eff3f7;
 		border-radius: 5px;
 }
 
-.nav h3 {
-
+.nav a h3:hover {
+color:#3ba8c0;
 }
 
 
@@ -141,7 +142,7 @@ background: #eff3f7;
 		border-radius: 5px;	
 }
 
-.contacts>h3 {
+.contacts h3 {
 	color:#eff3f7;
 	background: #3ba8c0;
 }
@@ -156,6 +157,10 @@ background: #41b9d4;
 a.button:hover {
 	background: #48cbe8;
 	text-decoration: underline;
+}
+
+a.skype {
+	background: #51daf8;
 }
 
 img.icon-sm {
@@ -181,7 +186,7 @@ height: 2px; /* Толщина линии */
 
 /*
 ===================
-RIGHT SECTION
+CV-INFO
 ===================
 */
 
@@ -245,8 +250,10 @@ padding:10px;
 width:650px;
 }
 
-.row{
-padding-bottom: 20px
+.row-form{
+float: left;	
+padding-bottom: 20px;
+clear:both;
 }
 
 img.icon {
@@ -273,17 +280,13 @@ WORKS GALLERY
 }
 
 .work{
-width: 185px;
-height:200px;	
-margin:10px 15px 20px 0;
-float:left;
+	width: 185px;
+	height:200px;	
+	margin:10px 15px 20px 0;
+	float:left;
 }
 
-/*
-===================
-COLOR OVERLAY
-===================
-*/
+
 
 a.folio-item {
 	position: relative;
@@ -334,13 +337,11 @@ span.caption{
 	
 }                        
 
-#plus       {  font-family:Helvetica;
-               font-weight:900;
-               color:rgba(255,255,255,.85);
-               font-size:96px;}
-
-
-
+#plus  {  
+	font-family:Helvetica;
+    font-weight:900;
+    color:rgba(255,255,255,.85);
+    font-size:96px;}
 
 
 
@@ -359,15 +360,15 @@ h5 {margin:5px 0;
 
 a.add{
 	display: block;
-position: relative;
-float:left;	
-height:129px;
-width: 181px;	
-margin:10px 15px 20px 0;
-border: 1px dashed #3ba8c0;
--webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-		border-radius: 5px;
+	position: relative;
+	float:left;	
+	height:129px;
+	width: 181px;	
+	margin:10px 15px 20px 0;
+	border: 1px dashed #3ba8c0;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+			border-radius: 5px;
 }
 
 a.add:hover {
@@ -389,6 +390,66 @@ display: block;
 margin: 0 auto;
 text-align: center;
 color:#3ba8c0;
+}
+
+/*
+===================
+CONNECT
+===================
+*/
+.form {
+	overflow: hidden;
+	border-radius: 5px;
+	margin:20px;	
+	width:650px;
+	height:840px;
+	background:#eff3f7; 
+}
+
+h1.cta {
+	background:#48cbe8;
+	position: relative;
+	font-size: 24px;
+	display: block;
+	width:100%;
+	padding:30px;
+	text-align: center;
+	color:white;
+}
+
+.thick {
+position: relative;
+width:100%;
+background-color: #51daf8; /* Цвет линии для браузера Firefox и Opera */
+height: 17px; /* Толщина линии */
+}
+
+.row-form {
+	position: relative;
+	width:100%;
+	margin: 0 auto;
+}
+
+input  {
+float:left;	
+position:absolute;
+border: 1px solid #ddd;
+border-radius: 5px;
+margin:20px;
+}
+
+label {
+	clear:both;
+}
+
+input.name {
+	width:192px;
+	height: 41px;	
+}
+
+input.message {
+	width:400px;
+	height:183px;
 }
 
 /*
