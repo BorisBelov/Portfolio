@@ -427,19 +427,36 @@ height: 17px; /* Толщина линии */
 .row-form {
 	position: relative;
 	width:100%;
-	margin: 0 auto;
+	margin: 0;
+	padding:20px;
+}
+
+.col {
+	float:left;
+	position: relative;
+	width:50%;
+	margin: 0;
+	padding:20px;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
 }
 
 input  {
 float:left;	
-position:absolute;
 border: 1px solid #ddd;
 border-radius: 5px;
 margin:20px;
 }
 
 label {
-	clear:both;
+display: inline;	
+float:left;
 }
 
 input.name {
