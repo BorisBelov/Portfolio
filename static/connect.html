@@ -13,92 +13,121 @@
 
 </head>
 <body>
-	<div class="header">
-		<div class="head_container clearfix">
-		<img src="img/logo.png" alt="" class="logo">
-		<ul class="icons">
-			<li class="social"> <a href="" class="vk"></a> </li>
-			<li class="social"> <a href="" class="twitter"> </a> </li>
-			<li class="social"> <a href="" class="facebook"></a> </li>
-			<li class="social"> <a href="" class="git"></a> </li>
-		</ul>
-		</div>
-	</div>
-
-	<div class="container clearfix">
-			
-			<div class="aside">
-					<div class="nav">
-						<a href="index.html"> <h3>Обо мне</h3> </a>
-						<hr>
-						<a href="works.html"><h3> Мои работы</h3></a>
-						
-						<a href="connect.html"><h3  class="active"> Связаться со мной </h3></a>
-					</div>
-
-					<div class="contacts">
-						<h3> Контакты </h3>
-						<a href="mail" class="button"><img src="img/mail.png" class="icon-sm"><h4> Мои работы</h4></a>
-						<a href="tel" class="button phone"><img src="img/phone.png" class="icon-sm"><h4> Связаться со мной </h4></a>
-						<a href="skype" class="button skype"><img src="img/skype.png" class="icon-sm"><h4> Связаться со мной </h4></a>
-					</div>	
+	<div class="page">
+		<div class="header">
+			<div class="head_container clearfix">
+			<img src="img/logo.png" alt="" class="logo">
+			<ul class="icons">
+				<li class="social"> <a href="" class="vk"></a> </li>
+				<li class="social"> <a href="" class="twitter"> </a> </li>
+				<li class="social"> <a href="" class="facebook"></a> </li>
+				<li class="social"> <a href="" class="git"></a> </li>
+			</ul>
 			</div>
-
-			<div class="center">
+			<div class="menu"></div>
+						<div class="header__menu-pop-up">
+							<div class="header__menu-pop-up-wrapper">
+								<a href="index.html"> <h3 >Обо мне</h3> </a>
+								<a href="works.html"><h3> Мои работы</h3></a>
+								<hr>
+								<a href="connect.html" ><h3 class="active"> Связаться со мной </h3></a>
+							</div>
+	
+						</div>
+		</div>
+	
+		<div class="container clearfix">
 				
-				<div class="form">
-					
-					<h1 class="cta">У вас интересный проект? Напишите мне!</h1>	
-				
-				<div class="thick">
+				<div class="aside">
+						<div class="nav">
+							<a href="index.html"> <h3>Обо мне</h3> </a>
+							<hr>
+							<a href="works.html"><h3> Мои работы</h3></a>
+							
+							<a href="connect.html"><h3  class="active"> Связаться со мной </h3></a>
+						</div>
+	
+						<div class="contacts">
+							<h3> Контакты </h3>
+							<a href="mail" class="button"><img src="img/mail.png" class="icon-sm"><h4> Мои работы</h4></a>
+							<a href="tel" class="button phone"><img src="img/phone.png" class="icon-sm"><h4> Связаться со мной </h4></a>
+							<a href="skype" class="button skype"><img src="img/skype.png" class="icon-sm"><h4> Связаться со мной </h4></a>
+						</div>	
 				</div>
+	
+				<div class="center">
 					
-						<div class="row-form">
-											<div class="col-1">
-												<label for="">Имя</label>
+					<div class="form">
+						
+						<h2 class="cta">У вас интересный проект? Напишите мне!</h2>	
+					
+					<div class="thick">
+					</div>
+						
+							<div class="row-form">
+												<div class="col-1">
+													<label for="">Имя</label>
+													<input type="text" class="name">
+												</div>
+												<div class="col-2">
+													<label for="">E-mail</label>
+													<input type="email" class="name">
+												</div>
+											</div>
+											<div class="row-form">
+												<label for="">Сообщение</label>
+												<textarea type="text" class="message">
+													</textarea>
+									 		</div>
+											
+									 		<div class="row-form">
+									 			<label>Введите код, указанный на картинке</label>
+												<div class="col-1">
+												<img src="" class="captcha" ></div>
+											<div class="col-2">
 												<input type="text" class="name">
 											</div>
-											<div class="col-2">
-												<label for="">E-mail</label>
-												<input type="email" class="name">
+									 		</div>
+						
+									 		<div class="row-form">
+									 		<div class="col-1">
+												<button class="send" >Отправить</button>
 											</div>
-										</div>
-										<div class="row-form">
-											<label for="">Сообщение</label>
-											<textarea type="text" class="message">
-												</textarea>
-								 		</div>
-										
-								 		<div class="row-form">
-								 			<label>Введите код, указанный на картинке</label>
-											<div class="col-1">
-											<img src="" class="captcha" ></div>
-										<div class="col-2">
-											<input type="text" class="name">
-										</div>
-								 		</div>
-					
-								 		<div class="row-form">
-								 		<div class="col-1">
-											<button class="send" >Отправить</button>
-										</div>
-											<div class="col-2">
-												<button class="clear">Очистить</button></div>
-								 		</div>
-									</div>			
-
-			</div>	
-			</div>
+												<div class="col-2">
+													<button class="clear">Очистить</button></div>
+									 		</div>
+										</div>			
+	
+				</div>	
+				</div>
 			
-	<div class="footer">
-		<div class="footer__container">
-				<a href="aut.html" class="lock"></a>
-				<p>Это мой сайт, пожалуйста не воруйте его.</p>
-			</div>
-	</div>
-<script src="jquery-2.1.3.js"></script>
-<script src="bootstrap.min.js"></script>
-<script src="script.js"></script>
 
+		<div class="contacts-bottom clearfix">
+				<ul class="bottom-contacts">
+					<li>
+					<a href="mail" class="contacts-bottom-button"><img src="img/mail.png" class="icon-sm"><h4 class="contacts-bottom-text">jmorrison@bk.ru</h4>
+					</a>
+					</li>
+					<li>
+					<a href="tel" class="contacts-bottom-button phone"><img src="img/phone.png" class="icon-sm"><h4 class="contacts-bottom-text">+7(965)2715665</h4>
+					</a>
+					</li>
+					<li>
+					<a href="skype" class="contacts-bottom-button skype"><img src="img/skype.png" class="icon-sm"><h4 class="contacts-bottom-text">Chelovek-bb</h4>
+					</a>
+					</li>
+				</ul>
+		</div>
+				
+		<div class="footer">
+			<div class="footer__container">
+					<a href="aut.html" class="lock"></a>
+					<p>Это мой сайт, пожалуйста не воруйте его.</p>
+				</div>
+		</div>
+	<script src="jquery-2.1.3.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="script.js"></script>
+	<script src="menu.js"></script></div>
 </body>
 </html>

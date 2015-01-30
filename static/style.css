@@ -31,7 +31,7 @@ html, body {
 
 .page {
 min-height:100%;
-font-family: Fira-sans, Helvetica, Sans-serif;
+font-family: 'fira_sansbook', Helvetica, Sans-serif;
 background: url(img/pattern.png);
 }
 
@@ -40,11 +40,6 @@ background: url(img/pattern.png);
   display: block;
 }
 
-h2 .block__title {
-	font-size: 21px;
-	font-weight: 300;
-	color: #3ba8c0;
-}
 
 a {
 	text-decoration: none;
@@ -56,9 +51,9 @@ p {
 }
 
 h3 {
-color:#959aa8;	
-padding:15px 0 10px 24px ;
-font-size: 21px;
+	color:#959aa8;	
+	padding:15px 0 10px 24px ;
+	font-size: 21px;
 }
 
 /*
@@ -89,6 +84,7 @@ img.logo{
 .header__right {
 position:relative;
 float:right;
+margin-right: 30px;
 }
 
 .icons{
@@ -156,6 +152,7 @@ height: 47px;
 .menu, .header__menu-pop-up {
 display: none;	
 }
+
 
 img.top-line {
 	margin:3px auto;
@@ -288,7 +285,7 @@ CV-INFO
 
 .block{
 	width:650px;
-padding:20px;
+padding:0;
 margin-top:20px;
 background: #eff3f7;
 -webkit-border-radius: 5px;
@@ -296,9 +293,20 @@ background: #eff3f7;
 		border-radius: 5px;
 }
 
-img.avatar {
+.block h2 {
+	display: inline-block;
+	font-size: 27px;
+	font-weight: 300;
+	color: #3ba8c0;
+	border-bottom: 2px solid #3ba8c0;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.avatar img {
 float:left;
 width: 150px;
+margin-left:20px; 
 }
 
 .data {
@@ -378,7 +386,13 @@ WORKS GALLERY
 	float:left;
 }
 
-
+img.site{
+	width:181px;
+	border: 2px solid #3ba8c0;
+-webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+		border-radius: 5px;
+}
 
 a.folio-item {
 	position: relative;
@@ -389,16 +403,6 @@ a.folio-item {
 .folio-item:hover img {
                opacity:0.5;
            	}
-
-
-img.site{
-	width:181px;
-	border: 2px solid #3ba8c0;
--webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-		border-radius: 5px;
-}
-
 
 .folio-item:hover {
 	background:rgba(1,108,164,.75);
@@ -496,12 +500,13 @@ CONNECT
 	background:#eff3f7; 
 }
 
-h1.cta {
+h2.cta {
 	background:#48cbe8;
 	position: relative;
-	font-size: 24px;
+	font-size: 19px;
 	display: block;
-	width:100%;
+	width:590px;
+	margin: auto;
 	padding:30px;
 	text-align: center;
 	color:white;
@@ -510,8 +515,8 @@ h1.cta {
 .thick {
 position: relative;
 width:100%;
-background-color: #51daf8; /* Цвет линии для браузера Firefox и Opera */
-height: 17px; /* Толщина линии */
+background-color: #51daf8; 
+height: 17px; 
 }
 
 
@@ -677,6 +682,17 @@ clear:both;
 margin: 0 auto;
 }
 
+h2.form-header {
+	background:#48cbe8;
+	position: relative;
+	font-size: 27px;
+	display: block;
+	margin:0 auto;
+	padding:30px;
+	text-align: center;
+	color:white;
+}
+
 .aut_form {
 	position: relative;
 	margin:0 auto;
@@ -688,16 +704,23 @@ margin: 0 auto;
 }
 
 .aut {
-float:none;
+	font-size: 27px;
+	float:none;
+}
+
+.form-inputs {
+	padding:10px;	
 }
 
 .footer_aut {
-position: absolute;
+	position: absolute;
 	bottom: 0;
 	right: 0;
 	left: 0;
 }
 
+input::-webkit-input-placeholder {font-size: 16px;}
+input:-moz-placeholder {font-size: 16px;}
 /*
 ========================================== 
 Screens 830px and up
@@ -714,9 +737,30 @@ h1 {
 	background: white;
 	position: absolute;
 	display: none;
-	right:10px;
+	top:95px;
+	right:-36px;
 	z-index: 1000;
+	border-radius: 5px;
+	box-shadow: 0 6px 9px rgba(0, 0, 0, 0.35);
+	
 }
+
+.header__menu-pop-up-wrapper {
+	overflow: hidden;
+}
+
+.header__menu-pop-up:before {
+position: absolute;
+top: -14px;
+right: 38px;
+z-index: 1000;
+content: '';
+display: block;
+width: 0;
+height: 0;
+border: 14px solid transparent;
+border-top: 0 solid transparent;
+border-bottom: 14px solid #3ba8c0;}
 
 .menu {
 position:absolute;
@@ -775,7 +819,9 @@ width:33.33333%;
 height:46px;
 float: left;
 text-align: center;
-background: #41b9d4; 
+background: #41b9d4;
+padding-top: 10px;
+
 }
 
 .contacts-bottom-button:hover {
@@ -784,7 +830,7 @@ background: #41b9d4;
 }
 
 h4.contacts-bottom-text {
-	width:40%;
+	width:75%;
 	padding:5px;
 }
 
@@ -811,27 +857,38 @@ width:100%;
 
 /* 
 ================================================
-Small devices (tablets, 628px and up) 
+Small devices (tablets, 749px and up) 
 ================================================
 */
 
-@media (max-width: 628px) { 
+@media (max-width: 749px) { 
 ul.icons {
 display:none;
 }
 
+.information {
+	position: relative;
+	margin:0 auto;
+	width:90%;
+}
 
-img.avatar {
-	position:relative;
+.avatar {
+width:100%;
+margin: auto; 
+}
+
+.avatar img {
+position:relative;
 float:none;
-width: 200px;
-margin: 0 auto;
+width: 150px;
+margin-left: 25%;
 }
 
 .data {
 	float:none;
 	width: 67%; /* 436px/650px */
 	text-align: center;
+	margin:0 auto;
 }
 
 .data p:nth-child(5) {
@@ -852,6 +909,114 @@ height:46px;
 float: none;
 text-align: center;
 background: #41b9d4; 
+}
+
+.work-container{
+	padding:10px;	
+	width:100%;
+	height:100%;
+}
+
+.work{
+	position:relative;
+	width: 90%;
+	height:200px;	
+	margin:10px 15px 20px 0;
+	float:none;
+}
+
+a.add, a.folio-item {
+	position:relative;
+	margin: 0 auto;
+	left:25%;
+}
+
+img.site{
+	width:181px;
+	border: 2px solid #3ba8c0;
+-webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+		border-radius: 5px;
+}
+
+.form {
+	overflow: hidden;
+	border-radius: 5px;
+	margin:20px;	
+	width:90%;
+	min-height:100%;
+	background:#eff3f7; 
+}
+
+h2.cta {
+	background:#48cbe8;
+	position: relative;
+	font-size: 19px;
+	display: block;
+	width:90%;
+	margin: auto;
+	padding:30px;
+	text-align: center;
+	color:white;
+}
+
+.thick {
+position: relative;
+width:100%;
+background-color: #51daf8; 
+height: 17px; 
+}
+
+
+.row-form {
+	position: relative;
+	width:70%;
+	margin: 0 60px;
+	padding-top:10px;
+}
+
+.col {
+	float:left;
+	position: relative;
+	width:50%;
+	margin: 0;
+	padding:20px 0;
+}
+
+.col-1 {
+	width: 30%;
+	float:left;
+	margin-right: 20px;
+}
+
+.col-2{
+	width: 30%;
+	float:left;
+}
+
+label {
+	font-size: 14px;
+	
+}
+
+input.name {
+	width:100px;
+	height: 31px;	
+}
+
+textarea {
+	width:70%;
+	height:183px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+img.captcha {
+	width: 100px;
+	height: 82px;
+	border: 1px solid #3ba8c0;
+	border-radius: 5px;
 }
 
 }
