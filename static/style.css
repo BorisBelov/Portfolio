@@ -284,8 +284,10 @@ CV-INFO
 */
 
 .block{
+	color: #4a545d;
 	width:650px;
 padding:0;
+padding-bottom: 10px;
 margin-top:20px;
 background: #eff3f7;
 -webkit-border-radius: 5px;
@@ -314,24 +316,31 @@ margin-left:20px;
 	width: 436px; /* 436px/650px */
 }
 
-.data p {
-	font-weight: 700;
-	padding:10px;
+.data dt {
+	font-family: 'fira_sansmedium';
+	font-size: 16px;
+	float: left;
+	clear: left;
+	margin-right: 10px;
 }
-.data p:nth-child(5) {
+.data dt:nth-child(5) {
 	float:left;
     width:160px;
 }
 
-.data span {
-	font-weight: 300;
-	padding-left: 5px;
+.data dd {
+
+	font-family: 'fira_sansbook';
+font-size: 15px;
+line-height: 1;
+float: left;
+margin-bottom: 25px;
+margin-left: 0;
 }
 
-.data span.skills{
-	display: inline-block;
-	width:194px;
-	margin-top: 10px;
+.data dd.skills{
+	width: 188px;
+
 }
 
 .data span.skill {
@@ -641,15 +650,19 @@ FOOTER
 	
 	background: #eff3f7 url(img/bottom-line.png) top center no-repeat;; 
 	width:100%;
-	height: 82px;
+	height: 62px;
 	padding-top: 20px;
 }
 .footer__container{
 	width:960px;
 	margin: 0 auto;
+	position: relative;
+	top: 16px;
 }
 
 a.lock {
+	position: relative;
+	top: -17px;
 	display: inline-block;
 	float: left;
 	background: url(img/lock.png) no-repeat;
@@ -668,11 +681,12 @@ a.lock:hover {
 }
 
 /*
-===================
+=====================================================
 AUTentification page
-===================
+==================================================
 */
 .aut_wrapper {
+font-family: fira_sanslight, sans-serif;
 padding-top: 100px;
 }
 
@@ -680,6 +694,11 @@ padding-top: 100px;
 padding-bottom: 20px;
 clear:both;
 margin: 0 auto;
+}
+
+.row-form-aut-label{
+	font-size: 36px;
+	float:none;
 }
 
 h2.form-header {
@@ -704,8 +723,11 @@ h2.form-header {
 }
 
 .aut {
-	font-size: 27px;
+	width:425px;
+	height:63px;
+	font-size: 17px;
 	float:none;
+	padding: 0px 0 0 15px;
 }
 
 .form-inputs {
@@ -714,13 +736,20 @@ h2.form-header {
 
 .footer_aut {
 	position: absolute;
-	bottom: 0;
 	right: 0;
 	left: 0;
 }
 
-input::-webkit-input-placeholder {font-size: 16px;}
-input:-moz-placeholder {font-size: 16px;}
+input::-webkit-input-placeholder {
+	font-family: fira_sanslight, sans-serif;
+	font-size: 14px;}
+input:-moz-placeholder {
+font-family: fira_sanslight, sans-serif;
+	font-size: 14px;}
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}	
 /*
 ========================================== 
 Screens 830px and up
