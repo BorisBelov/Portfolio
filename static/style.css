@@ -99,7 +99,7 @@ li.social a{
 	margin-top: 35px;
 	display: inline-block;
 	width: 47px;
-	height:47px;
+	height:49px;
 	display: inline-block; 
 	padding-right: 10px;
 	}
@@ -429,19 +429,29 @@ a.folio-item img {
 span.caption{
 	position: absolute;
 	display: inline-block;
-	padding:3px;
-	font-size: 14px;
-	font-weight: 300;
-	margin-top:-90px;
-	margin-left: 60px;
-	border: 1px solid #fff;
-	 -webkit-border-radius: 2px;
-   		-moz-border-radius: 2px;
-			border-radius: 2px;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	margin:auto;
 	opacity:0;
 	color:white;
 	text-align:center;
-}      
+} 
+p.caption-text {
+	display: inline-block;
+	margin:auto;
+	margin-top: 50px;
+	font-size: 14px;
+	font-weight: 300;
+	padding: 5px;
+	border: 2px solid #fff;
+	color:white;
+	 -webkit-border-radius: 2px;
+   		-moz-border-radius: 2px;
+			border-radius: 2px;
+
+}     
 
 .folio-item:hover .caption {
 	opacity:1;
@@ -463,7 +473,7 @@ h5 {margin:5px 0;
 	font-style: italic;
 }
 
-.work p{
+p.work-description{
 	text-align: center;
 	margin:10px 0;
 	font-weight: 300;
@@ -568,6 +578,15 @@ border-radius: 5px;
 padding-left:  5px;
 }
 
+input.aut::-webkit-input-placeholder {
+	font-family: fira_sanslight, sans-serif;
+	font-size: 17px;
+color: #51daf8;}
+input.aut:-moz-placeholder {
+font-family: fira_sanslight, sans-serif;
+	font-size: 17px;
+color: #51daf8;}
+
 label {
 	padding-bottom: 10px;
 	display: inline;	
@@ -632,17 +651,17 @@ button.clear {
 }
 
 button.send:hover {
-	top: 5px;
-	-webkit-box-shadow: 0px 0px 0px 0px rgba(104, 123, 143, 0);
-	-moz-box-shadow:    0px 0px 0px 0px rgba(104, 123, 143, 0);
-	box-shadow:         0px 0px 0px 0px rgba(104, 123, 143, 0);
+	top: 2px;
+	-webkit-box-shadow: 0px 3px 0px 0px rgba(104, 123, 143, 0);
+	-moz-box-shadow:    0px 3px 0px 0px rgba(104, 123, 143, 0);
+	box-shadow:         0px 3px 0px 0px rgba(104, 123, 143, 0);
 }
 
 button.clear:hover {
-	top: 5px;
-	-webkit-box-shadow: 0px 0px 0px 0px rgba(104, 123, 143, 0);
-	-moz-box-shadow:    0px 0px 0px 0px rgba(104, 123, 143, 0);
-	box-shadow:         0px 0px 0px 0px rgba(104, 123, 143, 0);
+	top: 2px;
+	-webkit-box-shadow: 0px 3px 0px 0px rgba(104, 123, 143, 0);
+	-moz-box-shadow:    0px 3px 0px 0px rgba(104, 123, 143, 0);
+	box-shadow:         0px 3px 0px 0px rgba(104, 123, 143, 0);
 }
 
 /*
@@ -702,6 +721,7 @@ a.lock:hover {
 }
 
 .footer p {
+	font-family: 'fira_sansbook', Helvetica, Sans-serif;
 	font-size:16px;
 	text-align:center;
 }
@@ -713,7 +733,7 @@ AUTentification page
 */
 .aut_wrapper {
 font-family: fira_sanslight, sans-serif;
-padding-top: 100px;
+padding-top: 50px;
 }
 
 
@@ -762,28 +782,30 @@ h2.form-header {
 }
 
 .footer_aut {
+	margin-top: -62px;
 	position: absolute;
 	right: 0;
 	left: 0;
 }
 
 .footer_aut p{
+	font-family: 'fira_sansbook', Helvetica, Sans-serif;
 	margin-top: 20px;
 }
 
-textarea::-webkit-textarea-placeholder {
+textarea::-webkit-input-placeholder {
 	font-family: fira_sanslight, sans-serif;
 	font-size: 11px;
-color: #51daf8;}
+	color: #51daf8;}
 textarea:-moz-placeholder {
-font-family: fira_sanslight, sans-serif;
+	font-family: fira_sanslight, sans-serif;
 	font-size: 11px;
-color: #51daf8;}
+	color: #51daf8;}
 
 input::-webkit-input-placeholder {
 	font-family: fira_sanslight, sans-serif;
 	font-size: 11px;
-color: #51daf8;}
+	color: #51daf8;}
 input:-moz-placeholder {
 font-family: fira_sanslight, sans-serif;
 	font-size: 11px;
