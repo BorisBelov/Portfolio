@@ -26,7 +26,8 @@ green-blue shades:	#3ba8c0
 */
 
 html, body {
-  height: 100%;
+	position: relative;
+
 }
 
 .page {
@@ -512,6 +513,135 @@ color:#3ba8c0;
 }
 
 /*
+=====================================================================
+Modal window
+======================================================================
+*/
+
+.modal {
+	display: none;
+	position:absolute;
+	width:100%;
+	min-height:100%;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	background: rgba(0,0,0,0.5);
+}
+
+.modal__wrapper{
+
+}
+
+form.modal__form{
+	position: relative;
+	width:362px;
+	margin:auto;
+	margin-top: 30px;
+	border-radius: 5px;
+	overflow: hidden;
+	background: #eff3f7;
+
+}
+
+.modal__header{
+	background:#48cbe8;
+	position: relative;
+	width:100%;
+	font-size: 19px;
+	display: block;
+	padding:15px;
+	text-align: center;
+	color:white;
+	border-bottom:10px solid #67dffa;
+	overflow: hidden;
+}
+
+h2.modal__header-text{
+	float:left;
+	font-family: 'fira_sanslight';
+	font-size: 25px;
+	font-weight: 300;
+}
+
+a.modal__close{
+	display:inline-block;
+	background: url(img/close.png) no-repeat;
+	width: 25px;
+	height: 25px;
+	float:right;
+	position: relative;
+	margin-right: 20px;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+a.modal__close:hover {
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+.modal__form-elements{
+	position: relative;
+	padding:20px;
+}
+
+form.modal__form label{
+	position:relative;
+	font-family: 'fira_sanslight';
+	font-size: 17px;
+}
+form.modal__form input{
+	position: relative;
+	width:90%;
+	height:40px;
+	margin-bottom: 13px;
+}
+
+.input-with-button{
+	position: relative;
+}
+
+form.modal__form input.file {
+position: absolute;
+z-index: 10000;
+top: 110px;
+left: 0px;
+opacity: 0;
+cursor:pointer;
+}
+
+img.input-pic {
+position: absolute;
+background:#48cbe8;
+top: 112px;
+left: 248px;
+padding: 9px;
+border-top-right-radius:5px;
+border-bottom-right-radius:5px;
+}
+
+form.modal__form textarea{
+	position:relative;
+	resize:none;
+	height:78px;
+	width:90%;
+	margin-bottom: 15px;
+}
+
+button.modal__button-submit{
+	display: block;
+	position: relative;
+	margin:0 auto;
+	background: #48cbe8;
+	-webkit-box-shadow: 0px 5px 0px 0px rgba(59, 168, 192, 1);
+	-moz-box-shadow:    0px 5px 0px 0px rgba(59, 168, 192, 1);
+	box-shadow:         0px 5px 0px 0px rgba(59, 168, 192, 1);
+}
+
+/*
 ===================
 CONNECT
 ===================
@@ -683,6 +813,8 @@ CLEARFIX HACK
 .contacts-bottom {
 	display:none;
 }
+
+
 
 
 /*

@@ -96,7 +96,7 @@
 							</div>
 	
 							
-							<a href="" class="add">
+							<a href="" id="add-btn" class="add" >
 									<img src="img/photo.png" alt="" class="photo-button">
 									<span class="add">Добавить проект</span>
 							</a>
@@ -105,6 +105,10 @@
 							</div>			
 						</div>	
 					</div>
+
+				
+
+
 			</div>
 					
 			</div>	
@@ -132,10 +136,45 @@
 					<a href="aut.html" class="lock"></a>
 					<p>Это мой сайт, пожалуйста не воруйте его.</p>
 		</div>
-			
+	
+
+
 	</div>
+
+
+	<div class="modal">	
+		<div class="modal__bg"></div>
+		<div class="modal__wrapper">
+			<form action="" class="modal__form">
+				<div class="modal__header">
+					<h2 class="modal__header-text">Добавление проекта</h2>
+								<a href="#" class="modal__close"></a>
+				</div>
+				<div class="modal__form-elements">
+					<label for="" class="modal__name">Название проекта</label>
+								<input type="text" class="modal__name-input" placeholder="Введите название">
+							
+							<div class="input-with-button">
+								<label for="" class="modal__name">Картинка проекта</label>
+
+								<input type="text" class="modal__name-input" placeholder="Загрузите изображение">
+								<input type="file" class="modal__name-input file" placeholder="Загрузите изображение">
+									<img src="img/upload.png" alt="" class="input-pic">
+							</div>
+								
+								<label for="" class="modal__name">URL проекта</label>
+								<input type="text" class="modal__name-input" placeholder="Добавьте ссылку">
+							
+				
+								<label for="" class="modal__name">Описание</label>
+								<textarea type="text" rows="4" cols="20" class="modal__name-input" placeholder="Несколько слов о проекте"></textarea>
+							<button type="submit" class="modal__button-submit">Добавить</button></div>
+		</div>
+	</div>
+	
+	
+</div>
 	<script src="jquery-2.1.3.js"></script>
 	<script src="menu.js"></script>	
-</div>
 </body>
 </html>
